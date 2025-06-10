@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+  margin: 0;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+header {background-color :rgb(97, 31, 97)}
+
+header h1 {  color: white; /* Antes estaba en negro, casi no se veía */
+  text-align: center;
+  font-size: 50px;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     background-color: rgb(97, 31, 97);
+     
+ }
+
+nav ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+li {display: inline;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+  }
+  
+.bienvenida h2 {
+    font-size: 2rem;
+    color: rgb(243, 14, 243);
+  }
+
+
+.productos_contenedor {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+}
+
+.productos_contenedor article:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #d4af37;
+    transition: all 0.3s ease-in-out;
+}
+
+.producto {
+  color: white;
+   border: none;
+    border-radius: 5px;
+    margin: 1rem;
+    transition: background 1s;
+    max-width: 400px;
+
+}
+
+form {
+    width: 400px;
+    background-color: black;
+    border-radius: 4px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.controls{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+   font-size: 18px;
+}
+
+.info-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .texto {
+    font-size: 25x;
+    padding: 70px;
+    margin: 50px;
+    letter-spacing: 1.5px;
+  }
+  
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .texto h2 {
+    color: rgb(133, 66, 133);
+  }
+
+  .footer {
+    background-color: rgb(97, 31, 97);
+    color: #eee;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+
+  .footer-creditos p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer-redes {
+    margin: 15px 0;
+  }
+  
+  .footer-redes a {
+    margin: 0 10px;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-redes a:hover {
+    color: white;
+  }
+
+
+  
+body {
+  background-color: rgb(97, 31, 97) !important;
+}
+
+.nosotros p{ color: white;}
