@@ -14,7 +14,7 @@ section {
 
 header {background-color :rgb(97, 31, 97)}
 
-header h1 {  color: white; /* Antes estaba en negro, casi no se veía */
+header h1 {  color: white; 
   text-align: center;
   font-size: 50px;
 }

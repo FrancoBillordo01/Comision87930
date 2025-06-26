@@ -1,0 +1,249 @@
+// colores que usare en la pagina
+$color-violeta: rgb(97, 31, 97);
+$color-claro: rgb(243, 14, 243);
+$color-texto: white;
+$color-footer-texto: #eee;
+$color-hover: #d4af37;
+$fuente-principal: 'Poppins', sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-violeta !important;
+  font-family: $fuente-principal;
+}
+
+section {
+  margin: 0;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+header {
+  background-color: $color-violeta;
+
+  h1 {
+    color: $color-texto;
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px 0;
+  background-color: $color-violeta;
+
+  ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: inline;
+      margin: 0 20px;
+
+      a {
+        color: $color-texto;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 2rem;
+  color: $color-texto;
+
+  h2 {
+    font-size: 2rem;
+    color: $color-claro;
+  }
+
+  p {
+    font-family: $fuente-principal;
+    font-size: 25px;
+  }
+}
+
+//
+
+.productos_contenedor {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  article:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px $color-hover;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+  }
+
+//
+
+
+
+.producto {
+  color: $color-texto;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px $color-hover;
+  }
+}
+
+
+form {
+  width: 400px;
+  background-color: black;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 50px auto 10px;
+  color: $color-texto;
+}
+
+.controls {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.info-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.texto {
+  font-size: 25px;
+  padding: 70px;
+  margin: 50px;
+  letter-spacing: 1.5px;
+
+  h2 {
+    color: lighten($color-violeta, 15%);
+  }
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer {
+  background-color: $color-violeta;
+  color: $color-footer-texto;
+  text-align: center;
+  padding: 30px 20px;
+
+  &-creditos {
+    p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  }
+
+  &-redes {
+    margin: 15px 0;
+
+    a {
+      margin: 0 10px;
+      color: black;
+      font-size: 20px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-texto;
+      }
+    }
+  }
+}
+
+.nosotros p {
+  color: $color-texto;
+}
+
+// Media Query
+@media screen and (max-width: 768px) {
+  .productos_contenedor {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .producto {
+    margin: 1rem auto;
+
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    width: 90%;
+    max-width: 400px; 
+    margin: 20px auto;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 0;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; 
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      display: block;
+      margin: 0;
+    }
+
+    ul li a {
+      font-size: 1.2rem;
+      padding: 8px 12px;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
