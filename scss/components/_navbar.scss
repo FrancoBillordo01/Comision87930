@@ -1,0 +1,39 @@
+.custom-navbar {
+  background-color: rgb(97, 31, 97); 
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .nav-link {
+      font-family: 'Poppins', sans-serif;
+      color: #eee;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #d4af37; 
+      }
+
+      &.active {
+        color: #f30ef3; 
+        border-bottom: 2px solid #f30ef3;
+      }
+
+      &.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.logo-navbar {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}

@@ -6,6 +6,8 @@
     <title>WORLD MUSICIANS</title>
     <link rel="icon" type="image/png" href="../favicon-16x16.png">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -13,46 +15,55 @@
         <h1>WORLD MUSICIANS</h1>
     </header>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li> <a href="instrumentos.html">INSTRUMENTOS</a> </li>
-                <li> <a href="nosotros.html">NOSOTROS</a> </li>
-                <li> <a href="contacto.html">CONTACTO</a> </li>
-                <li> <a href="vendidos.html">VENDIDOS</a></li>
-            </ul>
-        </nav>
- 
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="../assets/logo.png" alt="Logo" class="logo-navbar">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vendidos.html">VENDIDOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="instrumentos.html">INSTRUMENTOS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <section>
     
-        <form action="">   
-         <p>Si tienes una duda, puedes contactarnos aqui debajo, no dudes en consultarnos</p>
-            <div>
-            <label class="controls" for="Nombre">Nombre</label>
-            <input type="text" id="Nombre" >
-            </div>
-            <div>
-            <label class="controls" for="Apellido">Apellido</label>
-            <input type="text" id="Apellido" >
-            </div>
-            <div>
-            <label class="controls" for="Telefono">Telefono</label>
-            <input type="text" id="Telefono">
-            </div>
-            <div>
-            <label class="controls" for="E-mail">E-mail</label>
-            <input type="text" id="E-mail" >
-            </div>
-            <div>
-            <label class="controls" for="Mensaje">Mensaje</label>
-            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
-            </div>
-            <div>  
-            <button>Enviar Consulta</button> 
-            </div>
-        </form>
-    </section> 
+<div class="formulario-contacto">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Direccion de Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Mensaje/Consulta</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <button class="btn btn-primary">Enviar</button>
+</div>
+
+
+
+
+
+
 
 <footer class="footer">
     <div class="footer-contacto">
@@ -72,6 +83,7 @@
         
         
       
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
 </body>
 </html>
